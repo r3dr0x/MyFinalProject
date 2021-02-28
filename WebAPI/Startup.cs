@@ -2,7 +2,6 @@ using Business.Abstract;
 using Business.Concrete;
 using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
-using Core.Utilities.Security.Jwt;
 using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
@@ -86,7 +85,7 @@ namespace WebAPI
             {
                 endpoints.MapControllers();
             });
-            
+            //23.10 dersteyiz
         }
     }
 }
