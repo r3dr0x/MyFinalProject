@@ -8,8 +8,7 @@ namespace Business.CCS
     {
         public void Log()
         {
-            Console.WriteLine("Dosyaya loglandı");
+            Console.WriteLine("Dosyaya Loglandı");
         }
     }
-
 }

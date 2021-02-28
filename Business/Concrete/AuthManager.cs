@@ -3,6 +3,7 @@ using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
 using Core.Utilities.Security.JWT;
+using Entities.Dtos;
 using Entities.DTOs;
 
 namespace Business.Concrete
@@ -29,7 +30,7 @@ namespace Business.Concrete
                 LastName = userForRegisterDto.LastName,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
-                Status = true
+                status = true
             };
             _userService.Add(user);
             return new SuccessDataResult<User>(user, "Kayıt oldu");
