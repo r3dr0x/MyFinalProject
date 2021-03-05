@@ -1,4 +1,4 @@
-﻿using Core;
+﻿
 using Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,5 +12,6 @@ namespace Entities.DTOs
         public string ProductName { get; set; }
         public string CategoryName { get; set; }
         public short UnitsInStock { get; set; }
+
     }
 }
