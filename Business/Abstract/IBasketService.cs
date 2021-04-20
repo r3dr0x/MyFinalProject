@@ -6,9 +6,10 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    public interface ICategoryService
+    public interface IBasketService
     {
-        IDataResult<List<Category>> GetAll();
-        IDataResult<Category> GetById(int categoryId);
+        IDataResult<List<Basket>> GetAll();
+        IResult Add(Basket basket);
+
     }
 }
